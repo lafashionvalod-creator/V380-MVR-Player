@@ -1,0 +1,20 @@
+UPDATED BUILD VERSION
+
+This version fixes the previous GitHub Actions error:
+"Gradle version 9.0 does not exist".
+
+It now uses:
+- Android Gradle Plugin 9.3.0
+- Gradle 9.5
+- JDK 17
+- Android SDK 36
+- AGP 9 built-in Kotlin (the old Kotlin Android plugin was removed)
+
+IMPORTANT:
+Replace/update the files in your GitHub repository with this ZIP's files.
+The easiest way is to upload/overwrite:
+1. build.gradle.kts
+2. app/build.gradle.kts
+3. .github/workflows/build-apk.yml
+
+Then open Actions and run "Build V380 MVR Player APK" again.
